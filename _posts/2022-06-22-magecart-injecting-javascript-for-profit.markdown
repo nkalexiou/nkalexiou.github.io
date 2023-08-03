@@ -18,13 +18,17 @@ Credit cards have been the epicenter of such attacks because of easier loot mone
 
 In 2018 British airways suffered an attack from the Magecart group that managed to steal CVC codes, expiry dates and credit card numbers using 22 lines of code injected in the checkout page. The following snapshot shows the code used in the attack that creates a form reader sending stolen data to baways.com, which is a domain controlled by the attackers used to collect stolen credit card data.
 
-![Source: https://www.riskiq.com/blog/labs/magecart-british-airways-breach/](<1 UPK5_ovhDRROjaIFdYV1Vg.png>)
+![image]({{site.baseurl}}/assets/img/)
+![Source: https://www.riskiq.com/blog/labs/magecart-british-airways-breach/](https://www.riskiq.com/blog/labs/magecart-british-airways-breach/)
 
 
 Ticketmaster was not directly compromised by Magecart, but it was affected by a supply chain attack. Inbenta, which is a third party supplier for ticketmaster, was breached in 2018 and as a result hackers were able to run malware directly in ticketmaster’s payment webpages through the compromised third party component.
 
 The online merchant Newegg was hit in a similar fashion to British airways with Magecart injecting a slimmer version of 15 lines of code this time.
-Source: https://www.riskiq.com/blog/labs/magecart-newegg/
+
+
+![Source: https://www.riskiq.com/blog/labs/magecart-newegg/](https://www.riskiq.com/blog/labs/magecart-newegg/)
+
 
 Forbes is yet another example of attack using the same technique on the subscription page where customers would provide their payment details. Moreover, on June 26th 2020 Trend Micro published details about eight US local government services that had fallen victim to Magecart.
 Detecting ongoing attacks
@@ -43,7 +47,8 @@ MD5 is used only for illustration purposes as MD5 is vulnerable to collisions (l
 “The hash will remain the same as long as the contents of the file remain the same”
 
 Using this property of hash functions hashes of javascript can be calculated at regular time intervals. If the hash changes then a change in the contents of javascript is detected.
-Detection example
+
+## Detection example
 
 pizzalove.com has a checkout page where customers can enter their credit card details to order pizza. In order to support webpage functionality jquery.min.js is used included in the checkout page as follows:
 
@@ -59,15 +64,18 @@ The process of monitoring and hash calculation can be automated easily and to be
 A registry of javascript files per webpage in scope is created to detect new files. The script can be scheduled to run regularly and when a particular version of javascript is altered a warning is generated. Implemented functionality is basic on purpose but can be extended to adapt to the needs of various companies.
 GitHub - nkalexiou/suricatajs: Monitor your javascript files and detect unauthorized changes.
 Monitor your javascript files and detect unauthorized changes. - GitHub - nkalexiou/suricatajs: Monitor your javascript files and detect unauthorized changes.
+
 GitHubnkalexiou
-Discussion
+
+## Discussion
 
 Security teams are the natural driving force in setting security requirements and raising awareness for threats such as the one discussed here. Building a new tool or extending Suricatajs should be easy and can be done by the security team, especially the application security team if your company has one.
 
 However, the results of the scanner should be made available to developers too. It is the developers who can quickly identify if a new javascript insertion is malicious or not and whether a change is part of a recent release. Make sure to post Suricatajs alerts in slack or Teams channel and keep developers in the loop!
 
 “Post Suricatajs alerts in slack or Teams channel and keep developers in the loop!”
-References
+
+## References
 
 [1] https://www.riskiq.com/blog/labs/magecart-newegg/
 
