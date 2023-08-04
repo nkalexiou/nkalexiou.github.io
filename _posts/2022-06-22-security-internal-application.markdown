@@ -2,7 +2,7 @@
 layout: post
 title:  "Security? I develop an internal application!"
 date:   2022-06-22 19:00:00 +0300
-categories: security
+categories: cybersecurity
 ---
 
 More often that I wish, I need to talk about application security with people who are really sceptical about my role as an application security professional. They behave like it is a waste of time to talk security with me and they would rather go about their regular business. But the most usual and frustrating argument I get is that their application is intended for internal use only, or even worse "trusted parties identified by strong authentication" will be using it. In a way they politely ask me to do business elsewhere where more critical bugs might exist in their opinion. I was suprised to hear this argument even from people working with systems managing sensitive or financial information. These scepticals as I have decided to call them say: "Why would anyone bother hack the application if they already are authorized to move money or see sensitive information? They can simply steal it!"
