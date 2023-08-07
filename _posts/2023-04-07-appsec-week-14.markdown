@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "AppSec week 14 in summary"
+date:   2023-04-07 19:00:00 +0300
+categories: newsletter
+---
+
+Friday 7th of April edition
+News
+
+US online tax service efile.com hit by javascript attack
+
+A malicious actor manipulated a javascript library on efile.com, a tax reporting service in the US. The library "popper.js" that was hosted on the domain and originally displays popups in browsers, was altered to include base64 encoded malicious code. When the victims visited the efile.com domain their browsers would then contact an external domain and in some cases download malicious files.  The approach of manipulating  javascript libraries reminds a lot of magecart-style attacks, although in this case the end goal is different.
+
+You can find the description of the attack and a technical analysis below:
+InfoSec Handlers Diary Blog - SANS Internet Storm Center
+Supply Chain Compromise or False Positive: The Intriguing Case of efile.com [updated - confirmed malicious code], Author: Johannes Ullrich
+SANS Internet Storm CenterAH Apr 3rd 20231 day ago
+Attack description
+InfoSec Handlers Diary Blog - SANS Internet Storm Center
+Analyzing the efile.com Malware “efail”, Author: Johannes Ullrich
+SANS Internet Storm Center
+Technical analysis of the attack
+NPM affected by flood of malicious packages
+
+Adversaries are continuously leveraging package managers like npm to launch various types of attacks, such as crypto scam campaigns, spam campaigns and to deliver malware. Malicous packages are published on npm by automated scripts resulting in some cases several thousands of malicious new listings within a few hours. As a result of this adversarial behavior and the spike of new malicous packages, npm was not reachable at times.
+Flood of malicious packages results in NPM registry DoS - Help Net Security
+Attackers are exploiting the NPM registry to deliver malware and scams, and inadvertently launching a DoS against the service.
+Help Net SecurityZeljka Zorz
+Also this week
+
+The Finnish parliament website affected by DDoS attack
+
+An interesting writeup by Doyensec about the CSRF bypass found in Sveltekit.

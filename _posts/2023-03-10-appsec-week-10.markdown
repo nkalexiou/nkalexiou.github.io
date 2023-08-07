@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "AppSec week 10 in summary"
+date:   2023-03-10 19:00:00 +0300
+categories: newsletter
+---
+
+News
+
+Microsoft warns of sensitive information exposure through Android clipboard
+
+Microsoft has released a blog post explaining how the Android clipboard can be exploited by malicious applications resulting exposure of information stored in the clipboard. The blog presents a real-word case where the SHANE mobile application has been, supposedely without malicious intent, reading content from the clipboard and sending it to a remote server. Even if there was no malicious intend in this case, the security risks are evident. Read the technical analysis of the SHEIN app and the discussion in the following blog post.
+Protecting Android clipboard content from unintended exposure - Microsoft Security Blog
+Microsoft discovered that the SHEIN Android application periodically read the contents of the Android device clipboard and, if a particular pattern was present, sent the contents of the clipboard to a remote server.
+Microsoft Security BlogMicrosoft Threat Intelligence
+
+OWASP Secure Champions Guide
+
+Using security champions is a way to accelerate adoptions of DevSecOps and security practices, while pushing security left. It is really important that OWASP started this project in order to introduce some guidelines and best practices. I personally feel this is a misunderstood topic that is often treated with scepticism and regularly applied incorrectly. This is a must-read for every application security person out there already trying or considering to establish a security champions program.
+OWASP Security Champions Guide | OWASP Foundation
+A very brief, one-line description of your project
+OWASP logo
+
+Jenkins releases security advisory for multiple vulnerabilities
+
+The highest vulnerability is marked with high criticality after the security firm Aqua released two CVEs impacting Jenkins Server and Update Center. As always, stay with the bleeding edge version of software you are using.
+Jenkins Security Advisory 2023-03-08
+Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software
+Jenkins Security Advisory 2023-03-08
+
+Keep updated
+
+Github enforces 2FA for all starting March 13
+
+ChatGPT now available in Azure OpenAI
+
+Github releases blog post on orchestrating application security with Github Advanced Security. 
