@@ -100,5 +100,8 @@ jobs:
     uses: path/to-your-project-where-the-reusable-workflow-is/.github/workflows/name-of-workflow.yml@versiontag
 
 As a result you can find your report in Actions as an artifact
+
+![image]({{site.baseurl}}/docs/assets/images/image-1.png)
+
 Github artifact with OWASP dependency check report
 Github artifact with OWASP dependency check report
