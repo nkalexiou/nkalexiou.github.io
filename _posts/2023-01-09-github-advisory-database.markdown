@@ -21,8 +21,11 @@ You can access the Github Advisory Database at [https://github.com/advisories](h
 
 It provides an excellent collection of vulnerabilities and related articles. For example, these are the vulnerability details for one of Django's SQL Injection vulnerabilities:
 
-![image]({{site.baseurl}}/docs/assets/images/2022/sql-injection-advisory.png)
-*Django SQL Injection vulnerability details*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/sql-injection-advisory.png "Django SQL Injection vulnerability details")
+
+<br>
 
 As it is obvious all severity is measured using CVSS scores, which makes it easier to assess criticality.
 
