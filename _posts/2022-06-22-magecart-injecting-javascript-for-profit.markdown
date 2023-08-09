@@ -14,6 +14,7 @@ Credit cards have been the epicenter of such attacks because of easier loot mone
 
 *“Considering the number and diversity of cyber criminal groups expertise, as well as high success rate and stealth nature of the attacks, javascript injection could soon find a broader audience”*
 
+
 ## A history of hacks
 
 In 2018 British airways suffered an attack from the Magecart group that managed to steal CVC codes, expiry dates and credit card numbers using 22 lines of code injected in the checkout page. The following snapshot shows the code used in the attack that creates a form reader sending stolen data to baways.com, which is a domain controlled by the attackers used to collect stolen credit card data.
@@ -32,6 +33,7 @@ The online merchant Newegg was hit in a similar fashion to British airways with 
 
 Forbes is yet another example of attack using the same technique on the subscription page where customers would provide their payment details. Moreover, on June 26th 2020 Trend Micro published details about eight US local government services that had fallen victim to Magecart.
 
+
 ## Detecting ongoing attacks
 
 Defense must be done in layers and not at a single point. This means implementing a series of often overlapping controls ranging from security principles and procedures, secure configuration baselines, web application scanners, keeping third party components up to date and vulnerability assessments to name just a few.
@@ -49,6 +51,7 @@ Cryptographic hash functions are one-way functions that produce a deterministic 
 
 Using this property of hash functions hashes of javascript can be calculated at regular time intervals. If the hash changes then a change in the contents of javascript is detected.
 
+
 ## Detection example
 
 pizzalove.com has a checkout page where customers can enter their credit card details to order pizza. In order to support webpage functionality jquery.min.js is used included in the checkout page as follows:
@@ -65,6 +68,7 @@ Now, suppose that hackers breach pizzalove’s systems and insert a digital skim
 
 By comparing the old hash value to the new one defenders should be able to detect a change in version 1.12.4 of jquery; a very interesting finding that should raise suspicion. In a similar way, if malicious javascript was injected as a new script in the page defenders should be able to detect the new script insertion.
 
+
 ## Github project: Suricatajs
 
 The process of monitoring and hash calculation can be automated easily and to better illustrate this Suricatajs was created. Suricatajs is a python project built to facilitate monitoring of production javascript and to create alerts when changes are detected.
@@ -72,6 +76,7 @@ The process of monitoring and hash calculation can be automated easily and to be
 A registry of javascript files per webpage in scope is created to detect new files. The script can be scheduled to run regularly and when a particular version of javascript is altered a warning is generated. 
 
 Github link: [https://github.com/nkalexiou/suricatajs?ref=appsecguy.se](https://github.com/nkalexiou/suricatajs?ref=appsecguy.se)
+
 
 ## Discussion
 

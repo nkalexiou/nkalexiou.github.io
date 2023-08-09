@@ -11,79 +11,99 @@ If you, like me build scripts and apps to interact with APIs in order to constru
 
 Github exposes a GraphQL API which makes interaction and data gathering smoother. Dependabot metrics and security related issues can be fetched with GraphQL queries which makes it possible to gather AppSec metrics.
 
+
 ## Github GraphQL
 
 This post is not intended to be a GraphQL tutorial, but rather a collection of examples of how to interact with Github's API to extract AppSec data.
 
-All documentation for Github GraphQL is found here: https://docs.github.com/en/graphql.
+All documentation for Github GraphQL is found here: [https://docs.github.com/en/graphql](https://docs.github.com/en/graphql)
 
-To interact with the API you can use the following application: https://docs.github.com/en/graphql/guides/using-the-explorer
+To interact with the API you can use the following application: [https://docs.github.com/en/graphql/guides/using-the-explorer](https://docs.github.com/en/graphql/guides/using-the-explorer)
 
 Finally, to interact with the API you need to create a personal access token from Github and add it as a header in GraphiQL as instructed by the link above.
+
 
 ## Querying Dependabot data
 
 Let's start with a simple interaction with the API to fetch the description of a repository. The query is structured as shown below by providing owner and name for the repo and defining description as the field to retrieve in the response.
-GraphQL example query
-Get the repository's description
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-repository-description.png)
+*Get the repository's description*
 
 Extending the previous query further, we request the total number of Dependabot vulnerabilities for this specific repository. Observe how instead of using several queries as one would do with REST in order to collect all the details, only one query is used which defines how the response should look like.
-GraphQL number of vulnerabilities
-Number of vulnerabilities
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-vulnerabilities.png)
+*Number of vulnerabilities*
 
 It could be interesting to see how many vulnerabilities existing in a  repository in combination with the programming language(s) being used. So the query could become as follows:
 
-GraphQL vulnerabilities 2
-Vulnerabilities and languages used
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-vulnerabilities-languages.png)
+*Vulnerabilities and languages used*
 
 For simplicity, pagination for languages is restricted to the first 4 languages in the repository.
 
 Finally, let's build a query that asks for more details on each Dependabot vulnerability, such as information about the package name, severity level and the vulnerable package versions. Once again, the 30 first vulnerabilities are requested for this repository for simplicity.
-GraphQL vulnerability information
-Detailed vulnerability information
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-details-vulnerabilities.png)
+*Detailed vulnerability information*
+
 
 ## Using pagination to get all results
 
 In a real world scenario we would like to get the full range of results and not just the first 30 or 100 dependabot alerts. To do that we have to change to previous query a bit so that the response contains endCursor and hasNextPage results. The query becomes as follows:
-GraphQL pagination
-Pagination example
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-pagination.png)
+*Pagination example*
 
 Notice the extra section in the query that instructs the API to return the last object reference which is included in the current set of results (endCursor) and the hasNextPage boolean:
 
+```
 pageInfo {
     endCursor
     hasNextPage
 }
+```
 
 To fetch the next set of results we would have to replace after:null with the id of the cursor from the result.
 
-
+```
 vulnerabilityAlerts(first:4, after: "Y3Vyc29yOnYyOpHOiF41_Q=="){
 ...
 
+```
+
 The whole process of receiving endCursor and querying for the next set of results can be automated for example with python.
-Summary of all repositories
+
+
+## Summary of all repositories
 
 A useful use case, especially in a work environment, would be to fetch all queries your user has access to and provide a summary of the number of Dependabot alerts. You could do that by the following query:
-GraphQL all repositories
 
-## Summary of repositories
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-summary.png)
+*Summary of repositories*
 
 The variable querystring has to be defined as well:
 
+```
 {
   "queryString": "org:your_organization"
 }
+```
+
 
 ## Querying Github issues
 
 Besides Dependabot alerts, we can use GraphQL to query for issues as well. Suppose that we would like to find issues created by a human user or by integration with a third party software. We can do that by filtering the results as shown below:
-GraphQL issues query
-Issues by creator
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-creator-issues.png)
+*Issues by creator*
 
 In case labeling is used to mark security issues we could also filter repository issues by filtering on the label used. For example, supposed that all security issues are labeled with security. We could check the status of these issues by with the following query:
-GraphQL issues label
-Issues by label
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-issues-label.png)
+*Issues by label*
+
 
 ## Conclusion
 

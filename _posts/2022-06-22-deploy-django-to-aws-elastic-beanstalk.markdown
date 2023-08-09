@@ -27,6 +27,7 @@ AWS Beanstalk platform information
 
 That's it, click on the create button and your EBS environment will be ready in a few minutes.
 
+
 ## Automate deploy with Github Actions
 
 Next we will automate the deployment of the application using Github Actions. We will start by configuring the right access and in order to do that, go ahead and visit IAM in the AWS console. Click "Users" and then "Add Users". It is time to create the "Github User" account which is the user account that will be used by Github Actions to do the deployment.
