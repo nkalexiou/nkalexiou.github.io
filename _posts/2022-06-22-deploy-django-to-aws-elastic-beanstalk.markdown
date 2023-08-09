@@ -9,36 +9,43 @@ In this tutorial we will deploy our very own Django application to Amazon's Elas
 Create your EBS environment
 
 Let's start by creating our very own EBS environment so go ahead and log into your AWS console. Once logged in, search for Elastic Beanstalk. Go ahead and click "Create a new environment".
-Elastic Beanstalk in AWS portal
-Elastic Beanstalk in AWS portal
+
+![image]({{site.baseurl}}/docs/assets/images/2022/aws-elastic-beanstalk.png)
+*Elastic Beanstalk in AWS portal*
 
 Next select "Web server environment".
-AWS Beanstalk environment
-AWS Beanstalk environment
+
+![image]({{site.baseurl}}/docs/assets/images/2022/aws-beanstalk-web-server-env.png)
+*AWS Beanstalk environment*
 
 
 At the next screen go ahead and pick an application name, environment name and choose the platform you want to deploy to. We choose Docker, since we will deploy a dockerized version of our Django application.
-AWS Beanstalk platform information
+
+![image]({{site.baseurl}}/docs/assets/images/2022/aws-beanstalk-platform-info.png)
 AWS Beanstalk platform information
 
 
 That's it, click on the create button and your EBS environment will be ready in a few minutes.
-Automate deploy with Github Actions
+
+## Automate deploy with Github Actions
 
 Next we will automate the deployment of the application using Github Actions. We will start by configuring the right access and in order to do that, go ahead and visit IAM in the AWS console. Click "Users" and then "Add Users". It is time to create the "Github User" account which is the user account that will be used by Github Actions to do the deployment.
 
 Choose and username and then click on "Access Key - Programmatic access".
-AWS Beanstalk - automate deploy with Github actions
-AWS Beanstalk - automate deploy with Github actions
+
+![image]({{site.baseurl}}/docs/assets/images/2022/aws-beanstalk-github-actions.png)
+*AWS Beanstalk - automate deploy with Github actions*
 
 
 Under Permissions, choose "Attach existing policies directly" and search for beanstalk. Choosing admin rights for this user is not advisable for production environments. For my testing I used this since I did not have time tot dig into details.
-Github actions deploy automation
-Github actions deploy automation
+
+![image]({{site.baseurl}}/docs/assets/images/2022/aws-beanstalk-automation-deploy.png)
+*Github actions deploy automation*
 
 The rest should be a matter of clicking "Next" until the creation of the user. When your user is created you will receive a "Secret Access Key" and an "Access Key ID". You have to add these as secrets in your Github repository as shown below.
-AWS Beanstalk deploy secrets
-AWS Beanstalk deploy secrets
+
+![image]({{site.baseurl}}/docs/assets/images/2022/aws-github-secrets-deploy.png)
+*AWS Beanstalk deploy secrets*
 
 The final step is to create the Github Actions File. You can copy the example from the snippet or the Github link below.
 
@@ -93,8 +100,8 @@ jobs:
         deployment_package: deploy.zip
 ```
 
-code_blocks/eb-deploy.yml at main · nkalexiou/code_blocks
-Public code blogs for my website. Contribute to nkalexiou/code_blocks development by creating an account on GitHub.
-GitHubnkalexiou
+Find the code here:
+
+[https://github.com/nkalexiou/code_blocks/blob/main/eb-deploy.yml?ref=appsecguy.se](https://github.com/nkalexiou/code_blocks/blob/main/eb-deploy.yml?ref=appsecguy.se)
 
 Do not forget to put the yml file under .github/workflows in your repository.  You can find your environment and application name by visiting "Elastic Beanstalk" in your AWS console.
