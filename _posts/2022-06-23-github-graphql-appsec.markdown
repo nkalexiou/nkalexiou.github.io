@@ -11,6 +11,7 @@ If you, like me build scripts and apps to interact with APIs in order to constru
 
 Github exposes a GraphQL API which makes interaction and data gathering smoother. Dependabot metrics and security related issues can be fetched with GraphQL queries which makes it possible to gather AppSec metrics.
 
+<br>
 
 ## Github GraphQL
 
@@ -22,6 +23,7 @@ To interact with the API you can use the following application: [https://docs.gi
 
 Finally, to interact with the API you need to create a personal access token from Github and add it as a header in GraphiQL as instructed by the link above.
 
+<br>
 
 ## Querying Dependabot data
 
@@ -47,6 +49,7 @@ Finally, let's build a query that asks for more details on each Dependabot vulne
 ![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-details-vulnerabilities.png)
 *Detailed vulnerability information*
 
+<br>
 
 ## Using pagination to get all results
 
@@ -74,6 +77,7 @@ vulnerabilityAlerts(first:4, after: "Y3Vyc29yOnYyOpHOiF41_Q=="){
 
 The whole process of receiving endCursor and querying for the next set of results can be automated for example with python.
 
+<br>
 
 ## Summary of all repositories
 
@@ -91,6 +95,7 @@ The variable querystring has to be defined as well:
 }
 ```
 
+<br>
 
 ## Querying Github issues
 
@@ -104,6 +109,7 @@ In case labeling is used to mark security issues we could also filter repository
 ![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-issues-label.png)
 *Issues by label*
 
+<br>
 
 ## Conclusion
 
@@ -111,6 +117,6 @@ GraphQL is fast and can be used to directly query an API for the desired respons
 
 I hope that the previous example will be of help to get started faster with using Github's GraphQL API to extract AppSec data. You can find all code examples in the following repository:
 
-![nkalexiou@Github](https://github.com/nkalexiou/code_blocks/tree/main/graphQL?ref=appsecguy.se)
+[nkalexiou@Github](https://github.com/nkalexiou/code_blocks/tree/main/graphQL?ref=appsecguy.se)
 
 That's all!
