@@ -29,25 +29,35 @@ Finally, to interact with the API you need to create a personal access token fro
 
 Let's start with a simple interaction with the API to fetch the description of a repository. The query is structured as shown below by providing owner and name for the repo and defining description as the field to retrieve in the response.
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-repository-description.png)
-*Get the repository's description*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-repository-description.png "Get the repository's description")
+
+<br>
 
 Extending the previous query further, we request the total number of Dependabot vulnerabilities for this specific repository. Observe how instead of using several queries as one would do with REST in order to collect all the details, only one query is used which defines how the response should look like.
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-vulnerabilities.png)
-*Number of vulnerabilities*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-vulnerabilities.png "Number of vulnerabilities")
+
+<br>
 
 It could be interesting to see how many vulnerabilities existing in a  repository in combination with the programming language(s) being used. So the query could become as follows:
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-vulnerabilities-languages.png)
-*Vulnerabilities and languages used*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-vulnerabilities-languages.png "Vulnerabilities and languages used")
+
+<br>
 
 For simplicity, pagination for languages is restricted to the first 4 languages in the repository.
 
 Finally, let's build a query that asks for more details on each Dependabot vulnerability, such as information about the package name, severity level and the vulnerable package versions. Once again, the 30 first vulnerabilities are requested for this repository for simplicity.
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-details-vulnerabilities.png)
-*Detailed vulnerability information*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-details-vulnerabilities.png "Detailed vulnerability information")
 
 <br>
 
@@ -55,10 +65,15 @@ Finally, let's build a query that asks for more details on each Dependabot vulne
 
 In a real world scenario we would like to get the full range of results and not just the first 30 or 100 dependabot alerts. To do that we have to change to previous query a bit so that the response contains endCursor and hasNextPage results. The query becomes as follows:
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-pagination.png)
-*Pagination example*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-pagination.png "Pagination example")
+
+<br>
 
 Notice the extra section in the query that instructs the API to return the last object reference which is included in the current set of results (endCursor) and the hasNextPage boolean:
+
+<br>
 
 ```
 pageInfo {
@@ -67,13 +82,19 @@ pageInfo {
 }
 ```
 
+<br>
+
 To fetch the next set of results we would have to replace after:null with the id of the cursor from the result.
+
+<br>
 
 ```
 vulnerabilityAlerts(first:4, after: "Y3Vyc29yOnYyOpHOiF41_Q=="){
 ...
 
 ```
+
+<br>
 
 The whole process of receiving endCursor and querying for the next set of results can be automated for example with python.
 
@@ -83,11 +104,15 @@ The whole process of receiving endCursor and querying for the next set of result
 
 A useful use case, especially in a work environment, would be to fetch all queries your user has access to and provide a summary of the number of Dependabot alerts. You could do that by the following query:
 
+<br>
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-summary.png)
-*Summary of repositories*
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-summary.png "Summary of repositories")
+
+<br>
 
 The variable querystring has to be defined as well:
+
+<br>
 
 ```
 {
@@ -101,13 +126,17 @@ The variable querystring has to be defined as well:
 
 Besides Dependabot alerts, we can use GraphQL to query for issues as well. Suppose that we would like to find issues created by a human user or by integration with a third party software. We can do that by filtering the results as shown below:
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-creator-issues.png)
-*Issues by creator*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-creator-issues.png "Issues by creator")
+
+<br>
 
 In case labeling is used to mark security issues we could also filter repository issues by filtering on the label used. For example, supposed that all security issues are labeled with security. We could check the status of these issues by with the following query:
 
-![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-issues-label.png)
-*Issues by label*
+<br>
+
+![image]({{site.baseurl}}/docs/assets/images/2022/graphql-github-issues-label.png "Issues by label")
 
 <br>
 
