@@ -14,20 +14,26 @@ It shows employers and peers you have the advanced technical skills and knowledg
 
 So, is this description accurate enough? Can the CSSLP help advance your career? Is it meaningful to retain the certification? This is what the current post is all about. If you are looking for tips and tricks on how to pass the exam then there are tons of other posts to help you out. Instead, I want to discuss the usefulness of the CSSLP for my career and everyday work as someone workingwith AppSec in Sweden.
 
+<br>
+
 ## Why get CSSLP certified?
 
 The reasons can be various depending on your current status and your objectives. In my case, being a junior Application Security specialist, I was motivated by a senior member of my team to try going for the CSSLP. My colleague had suggested that the CSSLP can be a good way to "set the foundations" for AppSec and that the preparation can help me kickstart my AppSec career. On top of that it would show to my peers that I hold a respected certification.
 
 Without giving it a second thought I jumped to it despite it not being an official requirement from my employer, but rather a simple suggestion. Looking back at that decision, I can't say that I regret it.
 
+<br>
+
 ## Getting the certification
 
 During the 7 months studying for the certification, I read two books, solved preparation exams and of course, passed the certification exam. I used the following two books to study:
 
-    CSSLP Certified Secure Software Lifecycle Professional All-in-One Exam Guide
-    Official (ISC)2 Guide to the CSSLP CBK ((ISC)2 Press)
+- CSSLP Certified Secure Software Lifecycle Professional All-in-One Exam Guide
+- Official (ISC)2 Guide to the CSSLP CBK ((ISC)2 Press)
 
 Both books helped me a lot but I feel that the official guide is a must as it closely follows the structure and nature of the exam. Preparations tests is an absolute must in order to pass the exam. I already had several years of experience in software development and I knew all about the foundations of security.
+
+<br>
 
 ## Being certified, 1-3 years
 
@@ -39,6 +45,8 @@ Additionally, the CSSLP provided me with sufficient context for AppSec activitie
 
 Moreover, the CSSLP helps to understand the basics of an application secutity program and how software development is structured. What methods are available for AppSec people to interact with developer teams and also how these methods work, at which development phases etc.
 
+<br>
+
 ## Maintain the certification
 
 In order to continue being certified you need to earn a certain number of CPEs within the 3 year certification cycle and also, pay the annual fee.
@@ -48,6 +56,8 @@ In general, I haven't found it hard to earch CPEs since there is a range of acti
 What I do find very confusing though is how these CPEs are grouped into group A and group B CPEs. Long story short, I believe that (ISC)² tries to motive people to get credits through professional development (group B) as well, in combination with education. But trust me, it get irritating to see that your submission for CPEs is rejected with a note saying "this type of request does not qualify for group B credits" because of some dropdown you picked wrong. I mean...really..come on (ISC)²..
 
 Motivating me to pay the annual fee gets harder every year especially after the realization that my CV outgrows the certificate title. Of course it feels nice to be able to put titles next to your name, but at this point noone will be suprised because I hold the CSSLP.
+
+<br>
 
 ## The verdict
 
