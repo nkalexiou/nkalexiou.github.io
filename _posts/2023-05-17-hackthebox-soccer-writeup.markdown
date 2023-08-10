@@ -178,6 +178,6 @@ doas -u root /usr/bin/dstat  --plugin
 
 <br>
 
-![image]({{site.baseurl}}/docs/assets/images/2023/htb-soccer-root-flag "HTB soccer root flag")
+![image]({{site.baseurl}}/docs/assets/images/2023/htb-soccer-root-flag.png "HTB soccer root flag")
 
 <br>
