@@ -7,7 +7,7 @@ categories: cybersecurity
 
 <br>
 
-![image]({{site.baseurl}}/docs/assets/images/2023/security-champtions-giannis.png "Security Champions Giannis")
+![image]({{site.baseurl}}/docs/assets/images/2023/security-champions-giannis.png "Security Champions Giannis")
 
 <br>
 
@@ -49,7 +49,7 @@ Security champions are employees of the company who are genuinely interested in 
 
 <br>
 
-![image]({{site.baseurl}}/docs/assets/images/2023/security-champtions-spiderman.png "Security Champions")
+![image]({{site.baseurl}}/docs/assets/images/2023/security-champions-spiderman.png "Security Champions")
 
 <br>
 
@@ -85,7 +85,7 @@ Additionally, security champions influence decision making, get better understan
 
 <br>
 
-![image]({{site.baseurl}}/docs/assets/images/2023/security-champtions-success.png "Security Champions success")
+![image]({{site.baseurl}}/docs/assets/images/2023/security-champions-success.png "Security Champions success")
 
 <br>
 
