@@ -6,39 +6,43 @@ categories: newsletter
 ---
 
 Saturday 25th of March edition
-News
 
-Nuget packages infected with cryptostealer
+## News
+
+### Nuget packages infected with cryptostealer
 
 A total of 13 Nuget packages were found to be infected with a cryptostealer malware. These packages were downloaded more than 160.000 times and contained a powershell script that would act as the dropper upon package installation.
-Rogue NuGet Packages Infect .NET Developers with Crypto-Stealing Malware
-NuGet Repository under attack! New malicious campaign aims to infect #DotNET developer systems with cryptocurrency stealer malware.
-The Hacker NewsMar 22, 2023Ravie Lakshmanan
 
-Hackers steal over 1.6 million USD$ exploiting CTF style vulnerability
+[Rogue NuGet Packages Infect .NET Developers with Crypto-Stealing Malware](https://thehackernews.com/2023/03/rogue-nuget-packages-infect-net.html?m=1&ref=appsecguy.se)
+
+### Hackers steal over 1.6 million USD$ exploiting CTF style vulnerability
 
 By scaning Digital Oceans IP address space, the hacking group was able to identify the vulnerable servers, which were later exploitted by uploading a malicous java application. The hacker deployed application was enabled according to the default configurations of the server, a technique you can often encounter in CTF challenges. Only in this case, the trophy was far pricier than a base64 encoded flag.
-Hackers Steal Over $1.6 Million in Crypto from General Bytes Bitcoin ATMs Using Zero-Day Flaw
-💸 Over $1.6 million in #cryptocurrency stolen from hot wallets due to a zero-day security flaw in General Bytes’ ATM software.
-The Hacker NewsMar 21, 2023Ravie Lakshmanan
 
-US Healthcare provided notifies patients on misuse of pixel tracking
+[Hackers Steal Over $1.6 Million in Crypto from General Bytes Bitcoin ATMs Using Zero-Day Flaw](https://thehackernews.com/2023/03/hackers-steal-over-16-million-in-crypto.html?m=1&ref=appsecguy.se)
+
+
+### US Healthcare provided notifies patients on misuse of pixel tracking
 
 This is not the first case of misuse of pixel tracking technologies by companies. Essentially, tracking on patients or customers done via a pixel, such as the facebook pixel, without consent. The reasons vary from negligence to tracking technologies being hidden in the supply chain.
 
-https://today.ucsd.edu/story/uc-san-diego-health-notifies-patients-of-vendor-data-collection-issue
+[https://today.ucsd.edu/story/uc-san-diego-health-notifies-patients-of-vendor-data-collection-issue](https://today.ucsd.edu/story/uc-san-diego-health-notifies-patients-of-vendor-data-collection-issue)
 
-Changes happening at OWASP
+
+### Changes happening at OWASP
 
 Mark Curphey has resigned from OWASP's global board of directors. According to him OWASP is not driving innovation as it should, amongst other concerns. The following is the announcement from OWASP regarding Mark's resignation. In any case, we stay tuned to see what this change brings.
-Resignation of Mark Curphey | OWASP Foundation
-Resignation of Mark Curphey on the main website for The OWASP Foundation. OWASP is a nonprofit foundation that works to improve the security of software.
-OWASP logoGrant Ongers
 
-Also this week
+[Resignation of Mark Curphey | OWASP Foundation](https://owasp.org/blog/2023/03/20/resignation-of-mark-curphey.html?ref=appsecguy.se)
 
-Kali Linux introduces purple distro for defenders
+<br>
 
-Github releases Copilot X with enhanced features
+## Also this week
 
-Tanya Janca's presentation at OWASP Ottawa on building security champions 
+Kali Linux introduces purple distro for defenders. [Bleeping computer article](https://www.bleepingcomputer.com/news/security/kali-linux-20231-introduces-purple-distro-for-defensive-security/?ref=appsecguy.se)
+
+
+Github releases [Copilot X](https://github.com/features/preview/copilot-x?ref=appsecguy.se) with enhanced features
+
+
+Tanya Janca's [presentation](https://www.youtube.com/watch?v=WqzWVkCAhcQ&ref=appsecguy.se) at OWASP Ottawa on building security champions
