@@ -6,37 +6,37 @@ categories: newsletter
 ---
 
 Friday 28th of April edition
-News
 
-Massive xploitation of wordpress php eval plugin
+## News
+
+### Massive xploitation of wordpress php eval plugin
 
 Sucuri, a GoDaddy-owned company, detected a massive exploitation of phpeval, an 11 year old wordpress plugin. Vulnerable worpress plugins and exploitation of eval functionality hardly come with suprise. What is interesting though is the rapid increase in download numbers for the plugin since March. The vulnerable plugin is used to install a backdoor on infected websites to achieve persistence. According to Sucuri, three IP addresses from Russia are involved with the hacking.
-Massive Abuse of Abandoned Eval PHP WordPress Plugin
-Learn how misuse of the EvalPHP WordPress plugin is allowing attackers to create malicious pages and plant backdoors on vulnerable websites.
-Sucuri BlogBen Martin
-Hackers Exploit Outdated WordPress Plugin to Backdoor Thousands of WordPress Sites
-Hackers are exploiting an outdated WordPress plugin, Eval PHP, to secretly backdoor websites in an ongoing campaign.
-The Hacker NewsApr 24, 2023Ravie Lakshmanan
 
-Google adds 2FA sync
+[Massive Abuse of Abandoned Eval PHP WordPress Plugin](https://blog.sucuri.net/2023/04/massive-abuse-of-abandoned-evalphp-wordpress-plugin.html?ref=appsecguy.se)
+
+[Hackers Exploit Outdated WordPress Plugin to Backdoor Thousands of WordPress Sites](https://thehackernews.com/2023/04/hackers-exploit-outdated-wordpress.html?ref=appsecguy.se)
+
+
+### Google adds 2FA sync
 
 Google has added a much-anticipated feature that allows users to sync their 2FA codes in google authenticator among iOS and Android devices. Sounds amazing, right? It would be if encrypting 2FA codes with a secret passphrase was possible in order to guarantee confidentiality. Currently, the codes are protected by HTTPS during transmission only, which means that Google has access to your codes as well. Worth mentioning is that users demanding a higher level of security than the average person would probably be better without this new feature anyhow, since your google account becomes a single point of failure.
-Google leaking 2FA secrets – researchers advise against new “account sync” feature for now
-You waited 13 years for this feature in Google Authenticator. Now researchers are advising you to wait a while longer, just in case…
-Naked SecurityPaul Ducklin
 
-Apache Superset suffers RCE
+[Google leaking 2FA secrets – researchers advise against](https://nakedsecurity.sophos.com/2023/04/26/google-leaking-2fa-secrets-researchers-advise-against-new-account-sync-feature-for-now/?ref=appsecguy.se)
+
+
+### Apache Superset suffers RCE
 
 Apache superset is a popular data vizualization tool with over 50K stars on Github. In its default configuration the secret key used to encrypt user sessions on the server is fixed to a specific value, which in turn allows attackers to access administrative interfaces and data. Even though installation instructions inform users to change the key to a random value, around two thirds of all superset installations are found vulnerable. Being secure by default is indeed important.
-CVE-2023-27524: Insecure Default Configuration in Apache Superset Leads to Remote Code Execution
-Apache Superset is an open source data visualization and exploration tool. It has over 50K stars on GitHub, and there are more than 3000 instances of it exposed to the Internet. In our research, we found that a substantial portion of these servers – at least 2000 (two-thirds of all servers) – are ru…
-Horizon3.aiNaveen Sunkavally
-Thousands of Apache Superset servers exposed to RCE attacks
-Apache Superset is vulnerable to authentication bypass and remote code execution at default configurations, allowing attackers to potentially access and modify data, harvest credentials, and execute commands.
-BleepingComputerBill Toulas
 
-Also this week
+[CVE-2023-27524: Insecure Default Configuration in Apache Superset](https://www.horizon3.ai/cve-2023-27524-insecure-default-configuration-in-apache-superset-leads-to-remote-code-execution/?ref=appsecguy.se)
 
-Nahamsec completed a series of interviews about hacking popular cloud platforms. You find the videos on his youtube channel.
+[Thousands of Apache Superset servers exposed to RCE attacks](https://www.bleepingcomputer.com/news/security/thousands-of-apache-superset-servers-exposed-to-rce-attacks/?ref=appsecguy.se)
 
-List of OWASP trainings available in June
+<br>
+
+## Also this week
+
+Nahamsec completed a series of interviews about hacking popular cloud platforms. You find the videos on his [youtube channel](https://www.youtube.com/@NahamSec?ref=appsecguy.se).
+
+List of [OWASP trainings](https://www.eventbrite.com/e/owasp-2023-virtual-june-training-tickets-600868583107?ref=appsecguy.se) available in June.
