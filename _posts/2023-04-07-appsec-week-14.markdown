@@ -6,29 +6,33 @@ categories: newsletter
 ---
 
 Friday 7th of April edition
-News
 
-US online tax service efile.com hit by javascript attack
+## News
+
+
+### US online tax service efile.com hit by javascript attack
 
 A malicious actor manipulated a javascript library on efile.com, a tax reporting service in the US. The library "popper.js" that was hosted on the domain and originally displays popups in browsers, was altered to include base64 encoded malicious code. When the victims visited the efile.com domain their browsers would then contact an external domain and in some cases download malicious files.  The approach of manipulating  javascript libraries reminds a lot of magecart-style attacks, although in this case the end goal is different.
 
 You can find the description of the attack and a technical analysis below:
-InfoSec Handlers Diary Blog - SANS Internet Storm Center
-Supply Chain Compromise or False Positive: The Intriguing Case of efile.com [updated - confirmed malicious code], Author: Johannes Ullrich
-SANS Internet Storm CenterAH Apr 3rd 20231 day ago
-Attack description
-InfoSec Handlers Diary Blog - SANS Internet Storm Center
-Analyzing the efile.com Malware “efail”, Author: Johannes Ullrich
-SANS Internet Storm Center
-Technical analysis of the attack
-NPM affected by flood of malicious packages
+
+[Attack description](https://isc.sans.edu/diary/Supply%20Chain%20Compromise%20or%20False%20Positive%3A%20The%20Intriguing%20Case%20of%20efile.com%20%5Bupdated%20-%20confirmed%20malicious%20code%5D/29708?ref=appsecguy.se)
+
+[Technical analysis of the attack](https://isc.sans.edu/diary/Analyzing+the+efilecom+Malware+efail/29712?ref=appsecguy.se)
+
+
+### NPM affected by flood of malicious packages
 
 Adversaries are continuously leveraging package managers like npm to launch various types of attacks, such as crypto scam campaigns, spam campaigns and to deliver malware. Malicous packages are published on npm by automated scripts resulting in some cases several thousands of malicious new listings within a few hours. As a result of this adversarial behavior and the spike of new malicous packages, npm was not reachable at times.
 Flood of malicious packages results in NPM registry DoS - Help Net Security
 Attackers are exploiting the NPM registry to deliver malware and scams, and inadvertently launching a DoS against the service.
-Help Net SecurityZeljka Zorz
-Also this week
 
-The Finnish parliament website affected by DDoS attack
+[Help Net SecurityZeljka Zorz](https://www.helpnetsecurity.com/2023/04/05/flood-of-malicious-packages-results-in-npm-registry-dos/?ref=appsecguy.se)
 
-An interesting writeup by Doyensec about the CSRF bypass found in Sveltekit.
+<br>
+
+## Also this week
+
+The Finnish parliament website affected by [DDoS attack](https://computersweden.idg.se/2.2683/1.778053/finska-riksdagens-sajt-drabbat-av-overbelastningsattack?ref=appsecguy.se).
+
+An interesting [writeup](https://infosec.exchange/@doyensec/110152657254428809?ref=appsecguy.se) by Doyensec about the CSRF bypass found in Sveltekit.
