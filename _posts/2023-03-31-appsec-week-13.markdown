@@ -7,29 +7,35 @@ categories: newsletter
 
 
 Friday 31st of March edition
-News
 
-Github rotates RSA SSH host key
+## News
+
+### Github rotates RSA SSH host key
 
 As announced by Github, the RSA SSH host key is now rotated due to exposure in a public Github repository. According to Github there are no indicators of worry or compromize related to this incident, which was caused by mistake. Some users SSH to connect to Github might experience issues. The following link contains information both about the incident and how to solve these issues.
-We updated our RSA SSH host key | The GitHub Blog
-At approximately 05:00 UTC on March 24, out of an abundance of caution, we replaced our RSA SSH host key used to secure Git operations for GitHub.com.
-The GitHub BlogMike Hanley
-Github's SSH key exposed by mistake
-Parts of Twitter's source code leaked
+
+[We updated our RSA SSH host key | The GitHub Blog](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/?ref=appsecguy.se)
+
+
+### Parts of Twitter's source code leaked
 
 Twitter announced that parts of its source code were leaked by an unknown person in a Github public repository, resulting in a copyright infringement notice being sent to Github and asking the removal of the repository. The repository was taken down soon after the leak. Twitter is now also asking for data coupled to the Github account that might help authorities identify the person behind the leak, such as IP addresses, account information etc. It is hard to know whether the information disclosure will result in a security risk for Twitter users. It is also worth noting that earlier this month, Elon Musk promised to make limited parts of Twitter's source code public.
-Twitter's source code leaked in public repository
-ENISA publishes Foresight Cybersecurity Threats 2030
+
+[Twitter's source code leaked in public repository](https://www.nytimes.com/2023/03/26/technology/twitter-source-code-leak.html?ref=oembed)
+
+
+### ENISA publishes Foresight Cybersecurity Threats 2030
 
 ENISA, the european agency for cybersecurity published its report on cybersecurity threats for the midterm. It is a really interesting perception of the future landscape of threats as it deviates from the classic list of threats, because it considers political, economic and social aspects among others. Supply chain compromise of software dependencies tops the list of threats, while at the end of the list we find Artificial intelligence abuse. Disinformation campaigns and the rise of digital surveilance are also part of the threat list.
 
-https://www.enisa.europa.eu/publications/enisa-foresight-cybersecurity-threats-for-2030
+[ENISA's post](https://www.enisa.europa.eu/publications/enisa-foresight-cybersecurity-threats-for-2030)
 
-Also this week
+<br>
 
-Apple release updates for most of its products. As always, update ASAP.
+## Also this week
 
-A fun way to gamify secure coding by Github. Simply clone the repository and play the challenge.
+Apple release [updates](https://cert.se/2023/03/sakerhetsuppdateringar-fran-apple?ref=appsecguy.se) for most of its products. As always, update ASAP.
 
-Nice writeup from Snyk about mass assignment vulnerabilities in node.js
+A fun way to [gamify secure coding](https://github.com/skills/secure-code-game?ref=appsecguy.se) by Github. Simply clone the repository and play the challenge.
+
+Nice [writeup](https://snyk.io/blog/avoiding-mass-assignment-node-js/?ref=appsecguy.se) from Snyk about mass assignment vulnerabilities in node.js
