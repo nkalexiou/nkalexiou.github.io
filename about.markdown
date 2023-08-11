@@ -4,19 +4,8 @@ title: About
 permalink: /about/
 ---
 
+Nikos is an EU-based cybersecurity engineer with a background in application security. He has contributed to InfoSec projects spanning various sizes within the healthcare and finance sectors. He has experience in DevSecOps, security testing, secure development and enjoys solving challenging problems.
 
-Nikolaos (Nikos) Alexiou is an experienced Security Specialist based in EU. He has helped companies build secure development practices by building security in the development lifecycle. Nikos has worked with threat modeling, security testing, developer education, and automation of security activities.
-
-Nikos has been a leader of the OWASP Stockholm local chapter, helping to promote awareness and education about AppSec and security in Stockholm. He holds a Master's degree in Information Systems and has published his research in academic conferences and journals.
+As a leader of the local chapter of OWASP in Stockholm, Nikos helped to promote awareness and education about AppSec in Stockholm. He holds a Master's degree in Information Systems and has published his research in academic conferences and journals. 
 
 Mastodon: @appsecguy@infosec.exchange
-
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
