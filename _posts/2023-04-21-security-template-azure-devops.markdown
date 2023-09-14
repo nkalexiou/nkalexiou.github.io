@@ -3,6 +3,7 @@ layout: post
 title:  "Security templates in Azure DevOps"
 date:   2023-04-21 19:00:00 +0300
 categories: appsec
+description: "A guide on how to create reusable security templates in Azure DevOps"
 ---
 
 In this blog post we will explore how to create a basic reusable Azure DevOps  template to automate code analysis, using a popular SAST tool from Veracode. You would ideally want  all development teams to have a way to enable SAST scans with minimum configuration, so that they focus their efforts on remediation instead of configuring tooling in their pipelines. That is where Azure DevOps pipelines come in handy, as they cover the reusability part and thus making it a bit easier for developers.

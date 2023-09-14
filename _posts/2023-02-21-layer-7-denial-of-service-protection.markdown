@@ -3,6 +3,7 @@ layout: post
 title:  "Application L7 Denial-of-Service attacks"
 date:   2023-02-21 19:00:00 +0300
 categories: cybersecuity
+description: "How to improve your protection against DoS attacks on the application layer"
 ---
 
 ![image]({{site.baseurl}}/docs/assets/images/2023/sudan.png "allegedly sudan hacking group")

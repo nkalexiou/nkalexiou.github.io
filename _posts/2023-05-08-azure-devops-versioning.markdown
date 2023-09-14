@@ -3,6 +3,7 @@ layout: post
 title:  "Azure DevOps versioning"
 date:   2023-04-28 19:00:00 +0300
 categories: appsec
+description: "How to work with versions in Azure DevOps"
 ---
 
 A common scenario when integrating security in development activities, such as SAST scans covered in my previous blog post, is to create a reusable template that can be referenced from pipelines.

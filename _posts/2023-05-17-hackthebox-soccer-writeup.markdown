@@ -3,6 +3,7 @@ layout: post
 title:  "Hackthebox - Soccer writeup"
 date:   2023-05-17 19:00:00 +0300
 categories: HTB write-up
+description: "Hackthebox - HTB Soccer writeup - how to solve this box"
 ---
 
 This has been a fun box. It is ranked as easy, but I would argue it is more difficult than that. Pawning the user takes some time and thought.

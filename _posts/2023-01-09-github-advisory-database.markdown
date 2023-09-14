@@ -3,6 +3,7 @@ layout: post
 title:  "Github Advisory database"
 date:   2023-01-09 19:00:00 +0300
 categories: appsec
+description: "A short introduction to Github's advisory database"
 ---
 
 
