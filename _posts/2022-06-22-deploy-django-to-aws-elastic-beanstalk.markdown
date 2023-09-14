@@ -3,6 +3,13 @@ layout: post
 title:  "Deploy Django to AWS Elastic Beanstalk"
 date:   2022-06-22 19:00:00 +0300
 categories: development
+description: "Deploy Django to AWS Elastic Beanstalk"
+tags:
+- Django
+- Python
+- Development
+- AWS
+- Elastic Beanstalk
 ---
 
 In this tutorial we will deploy our very own Django application to Amazon's Elastic Beanstalk, or else EBS. If you haven't head of AWS EBS yet go ahead and check this page. In a short summary EBS provides a fully managed environment to help you quickly deploy your web apps without working too much to get the underlying infrastructure in place. That's pretty cool!
