@@ -4,6 +4,7 @@ title:  "Deploy Django to AWS Elastic Beanstalk"
 date:   2022-06-22 19:00:00 +0300
 categories: development
 description: "Deploy Django to AWS Elastic Beanstalk"
+keywords: Django, AWS, Elastic Beanstalk
 tags:
 - Django
 - Python
