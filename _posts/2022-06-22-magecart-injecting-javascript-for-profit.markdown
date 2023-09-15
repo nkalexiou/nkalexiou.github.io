@@ -4,6 +4,7 @@ title:  "Injecting javascript for profit: How to detect and stop skimmers"
 date:   2022-06-22 19:00:00 +0300
 categories: cybercrime
 description: "Injecting javascript for profit: How to detect and stop skimmers"
+keywords: "magecart, fraud, skimming attacks, skimmers, cybercrime, magento"
 ---
 
 
