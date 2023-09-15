@@ -4,6 +4,7 @@ title:  "Github GraphQL for AppSec metrics"
 date:   2022-06-23 19:00:00 +0300
 categories: appsec
 description: "How to use Github GraphQL to create metrics for Application Security"
+keywords: "appsec, GraphQL, Github, metrics, Application Security"
 ---
 
 GraphQL is a powerful way of interacting with an API to fetch a data object containing all, or at least most information that you need. It resembles REST in the way it works, but it's more powerful and faster. Instead of using multiple requests to query the server for different pieces of data that need to be stitched together, GraphQL allows to fetch a single custom defined object with a single call.

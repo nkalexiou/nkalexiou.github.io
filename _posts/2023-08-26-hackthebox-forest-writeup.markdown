@@ -4,6 +4,7 @@ title:  "Hackthebox - Blue writeup"
 date:   2023-06-03 19:00:00 +0300
 categories: HTB write-up
 description:  "Hackthebox - HTB Blue writeup - How to solve this box"
+keywords: "Hack the box, HTB, writeup, Forrest"
 ---
 
 ## Recon

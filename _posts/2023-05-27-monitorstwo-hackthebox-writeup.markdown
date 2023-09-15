@@ -4,6 +4,7 @@ title:  "Hackthebox - MonitorsTwo writeup"
 date:   2023-05-27 19:00:00 +0300
 categories: HTB write-up
 description: "Hackthebox - HTB MonitorsTwo writeup - How to solve this box"
+keywords: "Hack the box, HTB, writeup, MonitorsTwo"
 ---
 
 ## Recon

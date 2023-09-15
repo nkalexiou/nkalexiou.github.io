@@ -4,6 +4,7 @@ title:  "Detect open source vulnerabilities in Gradle projects with Github actio
 date:   2022-09-11 19:00:00 +0300
 categories: appsec
 description: "Detect open source vulnerabilities in Gradle projects with Github actions"
+keywords: "Gradle, Github Actions, DevSecOps, Open Source, Vulnerabilities, OWASP Dependency Check"
 ---
 
 

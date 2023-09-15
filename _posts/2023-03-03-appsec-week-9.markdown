@@ -3,6 +3,7 @@ layout: post
 title:  "AppSec week 9 in summary"
 date:   2023-03-03 19:00:00 +0300
 categories: newsletter
+keywords: "newsletter, AppSec, Application Security"
 ---
 
 LastPass hacked again, Github secret scanner, booking.com account takeover and OWASP CycloneX. AppSec Week 9 in summary, Friday March 3 edition.

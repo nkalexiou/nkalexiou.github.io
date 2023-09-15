@@ -3,6 +3,7 @@ layout: post
 title:  "AppSec week 17 in summary"
 date:   2023-04-28 19:00:00 +0300
 categories: newsletter
+keywords: "newsletter, AppSec, Application Security"
 ---
 
 Friday 28th of April edition

@@ -4,6 +4,7 @@ title:  "Start your Security Champions program (part 1)"
 date:   2023-07-12 19:00:00 +0300
 categories: cybersecurity
 description:  "Start your Security Champions program (part 1)"
+keywords: "Security Champions, Application Security, AppSec"
 ---
 
 <br>

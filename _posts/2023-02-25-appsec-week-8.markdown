@@ -3,6 +3,7 @@ layout: post
 title:  "AppSec week 8 in summary"
 date:   2023-02-25 19:00:00 +0300
 categories: newsletter
+keywords: "newsletter, AppSec, Application Security"
 ---
 
 This is the first time I do a newsletter. My goal is to summarize the week and the  important news about appsec. I can’t promise it will happen every week, but please reach out if you think it is worth it or if you have feedback.

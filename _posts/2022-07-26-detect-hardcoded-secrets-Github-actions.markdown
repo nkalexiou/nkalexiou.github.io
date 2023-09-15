@@ -4,6 +4,7 @@ title:  "Detect hardcoded secrets using Github actions"
 date:   2022-07-26 19:00:00 +0300
 categories: appsec
 description: "Improve your DevSecOps and detect hardcoded secrets using Github actions"
+keywords: "Github, DevSecOps, hardcoded secrets, appsec"
 ---
 
 Production passwords, tokens, AWS credentials and other types of secrets should be kept confidential and away from preying eyes of hackers or malicious insiders. In simple terms, no one should know production passwords for databases, admin passwords, AWS credentials etc unless there are legitimate business reasons that mandate to do so.  Therefore, keeping these secrets hard-coded in Github repositories must be strictly prohibited.
