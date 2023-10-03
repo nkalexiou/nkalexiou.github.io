@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books
-permalink: /about/
+permalink: /books/
 ---
 
 ## A few cybersecurity related books I recommend reading

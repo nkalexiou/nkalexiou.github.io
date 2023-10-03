@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Nikos is an EU-based cybersecurity engineer with a background in application security. He has contributed to InfoSec projects spanning various sizes within the healthcare and finance sectors. He has experience in DevSecOps, security testing, secure development and enjoys solving challenging problems.
+Nikos is a cybersecurity geek with experience spanning multiple InfoSec projects, such as penetration testing assignments, threat modeling workshops, kick-starting and maturing Application Security programs, security awareness and developer security training, among others. He cherishes the opportunity of hands-on involvement in projects that allow him to combine experience and opportunity to learn. 
 
-As a leader of the local chapter of OWASP in Stockholm, Nikos helped to promote awareness and education about AppSec in Stockholm. He holds a Master's degree in Information Systems and has published his research in academic conferences and journals. 
+As part of the OWASP Stockholm leadership team he organized cybersecurity seminars and meetups to help the local community exchange knowledge and experience. His research contributions have been published in international peer-reviewed journals and conferences. He holds a Masters degree in Information Security from the Aristotle University of Thessaloniki and a number of cybersecurity certifications.
+
+Nikos is fairly active on Infosec.Exchange Mastodon instance using @appsecguy and blogs on ![https://www.appsecguy.se](https://www.appsecguy.se).His Github home is ![https://github.com/nkalexiou/](https://github.com/nkalexiou/). 
 
 Mastodon: @appsecguy@infosec.exchange
