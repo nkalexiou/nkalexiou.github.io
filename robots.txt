@@ -1,0 +1,4 @@
+Sitemap: https://www.appsecguy.se/sitemap.xml
+
+User-agent: googlebot
+Disallow: /tag/
