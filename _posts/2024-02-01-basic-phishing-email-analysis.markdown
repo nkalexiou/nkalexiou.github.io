@@ -19,8 +19,8 @@ You should definitely invest on shielding your company or yourself against what 
 
 Email headers will help you understand how the email made it to your tenant. What IP did it come from? which domain? Which is the provider of the source IP address. You can analyze headers using one of these tools:
 
-- ![Google](https://toolbox.googleapps.com/apps/messageheader/)
-- ![mha](https://mha.azurewebsites.net/)
+- [Google](https://toolbox.googleapps.com/apps/messageheader/)
+- [mha](https://mha.azurewebsites.net/)
 
 Of course there are plenty more options out there. If you need to find further information about a particular IP address head to ![HE](https://bgp.he.net/) and use the search function.
 
@@ -32,8 +32,8 @@ You can check whether IPs are known to deliver malware or phishing emails throug
 
 Two of my favorites are:
 
-- ![VirusTotal](https://www.virustotal.com/gui/home/upload)
-- ![AbuseIPDB](https://www.abuseipdb.com/)
+- [VirusTotal](https://www.virustotal.com/gui/home/upload)
+- [AbuseIPDB](https://www.abuseipdb.com/)
 
 In particular, using virus total you can check file hashes that might be contained in the suspected email. On top of that, I like the VT graph capabilities that help you understand how one of the data you are analysing, such as IPs and subdomains, are related to other components (certificates, domains, malware, IPs etc). Here is an example for one IP address I investigated which clearly shows me that the IP was used in the past to deliver malware:
 
@@ -41,7 +41,7 @@ In particular, using virus total you can check file hashes that might be contain
 
 ## Other sources of information
 
-Besides IP and hash values you might want to check details of the domain the email is linking to. You have a few options at this point, one of which is to analyze DNS records. A valuable tool for this is ![DNSDumpster](https://dnsdumpster.com/). Besides DNS information you can also check certificates by using ![Crtsh](https://crt.sh/). A common scenario is that phishing websites will use Let's Encrypt certificates that are issued very recently in relation to the time of the investigation. 
+Besides IP and hash values you might want to check details of the domain the email is linking to. You have a few options at this point, one of which is to analyze DNS records. A valuable tool for this is ![DNSDumpster](https://dnsdumpster.com/). Besides DNS information you can also check certificates by using [Crtsh](https://crt.sh/). A common scenario is that phishing websites will use Let's Encrypt certificates that are issued very recently in relation to the time of the investigation. 
 
 ## Qualitative analysis
 

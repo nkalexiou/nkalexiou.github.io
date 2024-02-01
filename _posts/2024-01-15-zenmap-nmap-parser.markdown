@@ -16,6 +16,6 @@ I regularly have to present portscan results in a format that people, even non-t
 - a CSV file containing Operating System information per scanned host, per XML output file
 - a CSV file containing all XML reports in CSV format.
 
-For more information please visit ![https://github.com/nkalexiou/zenmap-parser](https://github.com/nkalexiou/zenmap-parser)
+For more information please visit [https://github.com/nkalexiou/zenmap-parser](https://github.com/nkalexiou/zenmap-parser)
 
 Cheers!
