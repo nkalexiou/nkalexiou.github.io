@@ -17,13 +17,13 @@ What are some important features to look for when browsing the market?
 
 The time it takes to analyze your code is of course one of the main attributes to evaluate when picking a SAST tool (SCA is a bit different in this category and it will be discussed later on). There are tools that scan large code bases in 10-15 minutes and others that take 3-4 hours. The main difference affecting analysis speed is how the actual analysis is performed. Usually, tools using regular expressions to scan source code without requiring a build are the winner in this category. It is much faster to analyze code by looking for bad patterns compared to building an abstract syntax tree from scratch with every build. 
 
-Keep in mind that it is really hard to achieve adoption for tools that take more than a few minutes to scan code and produce results. Incremental scans that promise faster scan times when tools rely on building the software, but in my experience they are not fast and they also increase the overall complexity of the SAST solution. 
+Keep in mind that it is really hard to achieve adoption for tools that take more than a few minutes to scan code and produce results. Incremental scans promise faster scan times even if the SAST tool relies on building the software, but in my experience they do not produce results fast and they increase the complexity of the solution. 
 
-Unless you are building software where you really need deep and detailed analysis of the abstract syntax tree to find edge cases, I would advise to stick to avoid these SAST solutions.
+Unless you really need deep and detailed analysis of the abstract syntax tree to find edge cases, I would advise to stick to avoid these SAST solutions.
 
 ### Code coverage and build configurations
 
-This is an obvious factor when choosing the right SAST solution for you. Have a PoC with a representative code base and make sure that the candidate tool can actually handle the programming language(s) you are using and more importantly, they way you are building your solutions. For example, for Java projects test both Maven and Gradle with actual build scripts you use. 
+An obvious factor when choosing the right SAST solution for you is to be able to scan all, or most of, the programming languages being used. Have a PoC with a representative code base and make sure that the SAST tool can actually handle the programming language(s) being used and more importantly, the way you are building your software. For example, test both Maven and Gradle for Java projects using your actual build scripts and configurations. 
 
 How you build your code is also important for the SCA tool, so make sure to test all possible build configurations.
 
@@ -33,7 +33,7 @@ Make sure that the tool you are choosing works with the version control system y
 
 ### IDE Plugins
 
-Most SAST tools offer plugins for popular IDEs, which is a must-have so that vulnerabilities are caught early in the process. Keep in mind that finding and remediating vulnerabilities in the IDE is much cheaper than fixing those later in the development process.  
+Most SAST tools offer plugins for popular IDEs, which is a must-have so that vulnerabilities are caught early in the process. Finding and remediating vulnerabilities in the IDE is much cheaper than fixing those later in the development process.  
 
 The same principle applies to SCA IDE plugins that can warn you when importing new vulnerable components, thus keeping your code base cleaner.
 
