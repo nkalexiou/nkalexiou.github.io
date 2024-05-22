@@ -2,7 +2,7 @@
 layout: post
 title:  "How to choose the right SAST and SCA tools"
 date:   2024-05-22 19:00:00 +0300
-categories: appsec, cybersecurity
+categories: appsec
 description: "Having SAST and SCA tool might not be enough. Choose the tools that work for you. Simplistic guide with important SAST and SCA features."
 keywords: "appsec, product security, cybersecurity, sast, sca, security tools"
 ---
