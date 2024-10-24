@@ -3,7 +3,7 @@ layout: post
 title:  "DevSecOps: Dynamic Security Analysis with nuclei"
 date:   2024-10-24 17:00:00 +0300
 categories: appsec
-description: "Product security logging is an important but ofter overlooked topic. What are the basics around product security logging and why is it necessary?"
+description: "DevSecOps: Integrate DAST scans in your CI/CD using nuclei"
 keywords: "appsec, product security, devsecops, nuclei, dast"
 ---
 
