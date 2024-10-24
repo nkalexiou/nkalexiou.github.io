@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DevSecOps: Dynamic Security Analysis with nuclei"
-date:   2024-10-24 17:00:00 +0300
+date:   2024-10-24 10:00:00 +0300
 categories: appsec
 description: "DevSecOps: Integrate DAST scans in your CI/CD using nuclei"
 keywords: "appsec, product security, devsecops, nuclei, dast"
