@@ -13,7 +13,7 @@ Dynamic Application Security Testing (DAST) is a method to test a snapshot of yo
 
 ## What is Nuclei
 
-(Nuclei)[https://github.com/projectdiscovery/nuclei] is an awesome open source tool that can perform DAST. It uses the concept of templates, which can be thought of as different types of tests that can be run. For example, you can use a template for specific server technlologies, CVEs, common web vulnerabilities etc. 
+[Nuclei](https://github.com/projectdiscovery/nuclei) is an awesome open source tool that can perform DAST. It uses the concept of templates, which can be thought of as different types of tests that can be run. For example, you can use a template for specific server technlologies, CVEs, common web vulnerabilities etc. 
 
 ## Why DAST in CI/CD?
 
@@ -57,6 +57,6 @@ jobs:
 
 The DAST scan happens in the last step, where we provide the target and define the version of the action to be used. 
 
-You can find an example of the analysis (here)[https://github.com/nkalexiou/suricatajs/actions/runs/11498390726/job/32004088011].
+You can find an example of the analysis [here](https://github.com/nkalexiou/suricatajs/actions/runs/11498390726/job/32004088011).
 
 ![image]({{site.baseurl}}/docs/assets/images/2024/dast_results.png "OSI model")
