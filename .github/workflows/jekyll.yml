@@ -50,10 +50,10 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v2
-      - name: Generate the sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: https://www.appsecguy.se/
+#      - name: Generate the sitemap
+#        uses: cicirello/generate-sitemap@v1
+#        with:
+#          base-url-path: https://www.appsecguy.se/
 
   # Deployment job
   deploy:
